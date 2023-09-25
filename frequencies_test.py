@@ -4,7 +4,7 @@
 from frequencies import frequencies
 
 def test_mixed_list():
-    input = ['0', 4,4,'4','d','d','e',0,'a','d','4']
+    input = ['0', 4, 4, '4', 'd', 'd', 'e', 0, 'a', 'd', '4']
     output = frequencies(input)
     assert output['4'] == 4
     assert output['d'] == 3
@@ -14,10 +14,12 @@ def test_mixed_list():
     assert 4 not in output.keys()
     assert 0 not in output.keys()
 
+
 def test_empty_list():
     input = []
     output = frequencies(input)
     assert output == {}
+
 
 def test_example_1():
     input = ['a', 'a', 'b', 'b', 'b', 'c']
@@ -25,6 +27,7 @@ def test_example_1():
     assert output['a'] == 2
     assert output['b'] == 3
     assert output['c'] == 1
+
 
 def test_example_2():
     input = [100, 'Hello', '100', '100', 100]
